@@ -2,7 +2,6 @@
 #include <stdbool.h>
 
 #include "efm32gg.h"
-#include "sound.h"
 
 #define BUTTON1 0
 #define BUTTON2 1

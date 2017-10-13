@@ -24,7 +24,7 @@ Note * notes[];
  
 void chooseSong(Song *, uint16_t);
 
-void stopSogn();
+void stopSong();
 
 void setNote(Note *, int);
 
