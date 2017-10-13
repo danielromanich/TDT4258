@@ -7,7 +7,7 @@ void setupDAC();
 void setupNVIC();
 
 void setupGPIO();
-void startPolling();
+void 
 
 /*
  * Your code will start executing here 

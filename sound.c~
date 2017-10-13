@@ -33,6 +33,7 @@ void chooseSong(Song *song, uint16_t length)
 	currentSong = song;	
 	currentNoteLen = length; 
 	setupDAC();	
+	//setupTimer(SAMPLE_PERIOD);
 } 
  
 void stopSong()
