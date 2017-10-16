@@ -82,6 +82,6 @@ extern Note D5;
 extern Note D3;
 extern Song A;
 extern Song B;
-extern Song C;
+extern Song c;
 extern Song GOT;
 extern Song SHOOTING;
