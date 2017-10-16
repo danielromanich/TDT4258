@@ -24,7 +24,7 @@ Note * notes[];
  
 void chooseSong(Song *, uint16_t);
 
-void stopSong();
+void stopSogn();
 
 void setNote(Note *, int);
 
@@ -47,7 +47,7 @@ extern uint16_t songProgress;
 extern uint16_t progress;
 
  
-//Tones by https://github.com/mathiasose
+//Music and tones by https://github.com/mathiasose
  
 extern Note G7;
 extern Note G6;
@@ -81,4 +81,8 @@ extern Note D4;
 extern Note D5;
 extern Note D3;
 extern Song THATSNOMOON;
-extern Song GOT;
+extern Song PEWPEW;
+extern Song ONEUP;
+extern Song SCOM;
+extern Song CANON;
+extern Song JUMP;
