@@ -26,26 +26,25 @@ void startPolling() {
 				 * BUTTONS 1-8 has been defined. To enable another button make a new case. 
 				 */
 			case BUTTON1:
-				chooseSong(&THATSNOMOON, 0x3FFF);
+				chooseSong(&GOT, 0x3FFF);
 				break;
 			case BUTTON2:
-				*GPIO_PA_DOUT = (0xFF << 8);
-				chooseSong(&THATSNOMOON, 0x3FFF);
+				chooseSong(&SHOOTING, 0x3FFF);
 				break;
 			case BUTTON3:
-				chooseSong(&THATSNOMOON, 0x3FFF);
+				//chooseSong(&THATSNOMOON, 0x3FFF);
 				break;
 			case BUTTON4:
-				chooseSong(&THATSNOMOON, 0x3FFF);
+				//chooseSong(&THATSNOMOON, 0x3FFF);
 				break;
 			case BUTTON5:
-				chooseSong(&THATSNOMOON, 0x3FFF);
+				//chooseSong(&THATSNOMOON, 0x3FFF);
 				break;
 			case BUTTON6:
-				chooseSong(&THATSNOMOON, 0x3FFF);
+				//chooseSong(&THATSNOMOON, 0x3FFF);
 				break;
 			case BUTTON7:
-				chooseSong(&THATSNOMOON, 0x3FFF);
+				//chooseSong(&THATSNOMOON, 0x3FFF);
 				break;
 			case BUTTON8:
 				stopSong();

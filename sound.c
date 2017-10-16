@@ -18,15 +18,10 @@ uint16_t songProgress = 0;
 uint16_t progress = 0;
 
  
- 
- 
-void setNote(Note * note, int offset)
-{
-	
-	*DAC0_CH0DATA = note->length[offset];	//Set left volume
-	*DAC0_CH1DATA = note->length[offset];	//Set right volume
-} 
- 
+void setVolume(int value) {
+	*DAC0_CH0DATA = value;	//Set left volume
+	*DAC0_CH1DATA = value;	//Set right volume
+}
  
 void chooseSong(Song *song, uint16_t length)
 {	
@@ -45,29 +40,30 @@ void stopSong()
 } 
  
 void playSongBW(){
-	while(1){
-		while(1){
+	while(1) {
+		while(1) {
 			if((*TIMER1_CNT % SAMPLE_PERIOD) == 0){
-				break;
+				break; //Wait until we have a period
 			}
 		}
 		//Do checks
+		
 		if (progress > currentNoteLen) {
 			songProgress++;
 			progress = 0;
 		} else {
 			progress++;
-		};
+		}
 
 		if (songProgress > currentSong->size) {
 			stopSong();
 			return;
 		}
+		
 		//Set volume
 		Note* n = currentSong->notes[songProgress];
-		int offset = (i % n->noteCount);
-		setNote(n, offset);
-		//setNote(currentSong.notes[songProgress], songProgress);
+		int offset = i % n->noteCount;
+		setVolume(n->length[offset]);
 		//Do updates
 		i++;
 	}
@@ -500,44 +496,7 @@ Note D3 = {
 		    92, 94, 97, 100, 102, 105, 107, 110, 113,
 		    115, 118, 121, 123}};
 
- 
-Song THATSNOMOON = {
-	37, {
-&D4, &D4, &D4, &G4, &G4, &G4, &G4, &A4, &A4, &A4, &AS4, &C5,
-		    &AS4, &AS4, &AS4, &AS4, &D4, &D4, &D4, &D4,
-		    &D4, &D4, &G4, &G4, &G4, &G4, &A4, &A4,
-		    &AS4, &D4, &AS4, &G4, &D5, &C5, &C5, &C5, &C5}};
 
-Song PEWPEW = {
-	13, {
-&D5, &C5, &B4, &A4, &G4, &F4, &E4, &D4, &C4, &B3, &A3, &G3, &F3}};
+Song GOT = {152, {&E5, &E5, &A4, &A4, &C5, &D5, &E5, &E5, &A4, &A4, &C5, &D5, &E5, &E5, &A4, &A4, &C5, &D5, &E5, &E5, &A4, &A4, &C5, &D5, &E5, &E5, &A4, &A4, &CS5, &D5, &E5, &E5, &A4, &A4, &CS5, &D5, &E5, &E5, &A4, &A4, &CS5, &D5, &E5, &E5, &A4, &A4, &CS5, &D5, &E5, &E5, &E5, &E5, &E5, &E5, &A4, &A4, &A4, &A4, &A4, &A4, &C5, &D5, &E5, &E5, &E5, &E5, &A4, &A4, &A4, &A4, &C5, &D5, &B4, &B4, &E4, &E4, &G4, &A4, &B4, &B4, &E4, &E4, &G4, &A4, &B4, &B4, &E4, &E4, &G4, &A4, &B4, &B4, &E4, &E4, &G4, &A4, &D5, &D5, &D5, &D5, &D5, &D5, &G4, &G4, &G4, &G4, &G4, &G4, &C5, &B4, &D5, &D5, &D5, &D5, &G4, &G4, &G4, &G4, &C5, &B4, &A4, &A4, &D4, &D4, &F4, &G4, &A4, &A4, &D4, &D4, &F4, &G4, &A4, &A4, &D4, &D4, &F4, &G4, &A4, &A4, &D4, &D4, &F4, &G4, &A4, &A4, &A4, &A4, &A4, &A4, &A4, &A4}};
 
-
-Song ONEUP = {
-	18, {
-&C4, &E4, &G4, &C4, &E4, &G4, &C5, &E5, &G5, &C5, &E5, &G5, &C6,
-		    &E6, &G6, &C7, &E7, &G7}};
-
-Song SCOM = {
-	65, {
-&G4, &G5, &D5, &C5, &C6, &D5, &B5, &D5, &G4, &G5, &D5, &C5, &C6,
-		    &D5, &B5, &D5, &A4, &G5, &D5, &C5, &C6, &D5,
-		    &B5, &D5, &A4, &G5, &D5, &C5, &C6, &D5, &B5,
-		    &D5, &C5, &G5, &D5, &C5, &C6, &D5, &B5, &D5,
-		    &C5, &G5, &D5, &C5, &C6, &D5, &B5, &D5, &A5,
-		    &D5, &G5, &D5, &A5, &D5, &B5, &D5, &C6, &D5,
-		    &B5, &D5, &A5, &D5, &G5, &D5, &G5}};
-
-Song CANON = {
-	52, {
-&A5, &FS5, &D5, &A4, &FS4, &D4, &A3, &CS4, &E4, &A4, &CS5, &E5,
-		    &FS5, &D5, &B4, &FS4, &D4, &B3, &FS3, &A3,
-		    &CS4, &FS4, &A4, &CS5, &D5, &B4, &G4, &D4,
-		    &B3, &G3, &D3, &FS3, &A3, &D4, &FS4, &A4,
-		    &B4, &G4, &D4, &B3, &G3, &D3, &A3, &CS4,
-		    &E4, &A4, &CS5, &E5, &A5, &A5, &A5, &A5}};
-
-Song JUMP = {
-	8, {
-&C5, &D5, &E5, &F5, &G5, &A5, &B5, &C6}};
-
+Song SHOOTING = {60, {&E5, &E5, &E5, &E5, &E5, &E5, &A4, &A4, &F5, &F5, &F5, &F5, &C5, &C5, &A4, &E5, &E5, &E5, &E5, &E5, &E5, &A4, &A4, &F5, &F5, &F5, &F5, &C5, &C5, &A4, &E5, &E5, &E5, &E5, &E5, &E5, &A4, &A4, &F5, &F5, &F5, &F5, &C5, &C5, &A4, &E5, &E5, &E5, &E5, &E5, &E5, &A4, &A4, &F5, &F5, &E5, &E5, &C5, &C5, &A4 }};

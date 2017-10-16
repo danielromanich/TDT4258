@@ -80,5 +80,5 @@ extern Note B3;
 extern Note D4;
 extern Note D5;
 extern Note D3;
-extern Song SHOOTING;
+extern Song THATSNOMOON;
 extern Song GOT;
