@@ -19,8 +19,6 @@ int buttonCount = 8;
 
 void onButtonPushed();
 int getState(int input);
-//void disableInterrupts();
-
 
 /*
  * TIMER1 interrupt handler 
@@ -71,36 +69,28 @@ void __attribute__ ((interrupt)) GPIO_ODD_IRQHandler()
 void onButtonPushed()
 {
 	uint32_t value = (*GPIO_PC_DIN ^ 0xFFFFFFFF) & 0xFF;
-	switch (getState(value)) {
-		/*
-		 * BUTTONS 1-8 has been defined. To enable another button make a new case. 
-		 */
-	case BUTTON1:
-		chooseSong(&THATSNOMOON, 0x3FFF);
-		break;
-	case BUTTON2:
-		chooseSong(&THATSNOMOON, 0x3FFF);
-		break;
-	case BUTTON3:
-		chooseSong(&THATSNOMOON, 0x3FFF);
-		break;
-	case BUTTON4:
-		chooseSong(&THATSNOMOON, 0x3FFF);
-		break;
-	case BUTTON5:
-		chooseSong(&THATSNOMOON, 0x3FFF);
-		break;
-	case BUTTON6:
-		chooseSong(&THATSNOMOON, 0x3FFF);
-		break;
-	case BUTTON7:
-		chooseSong(&THATSNOMOON, 0x3FFF);
-		break;
-	case BUTTON8:
-		stopSong();
-		break;
-	default:
-		break;
+    switch (getState(value)) {
+			/*
+			* BUTTONS 1-8 has been defined. To enable another button make a new case.
+			*/
+		case BUTTON1:
+			chooseSong(&GOT, 0x3500);
+			break;
+		case BUTTON2:
+			chooseSong(&SHOOTING, 0x3FFF);
+			break;
+		case BUTTON3:
+		case BUTTON4:
+		case BUTTON5:
+		case BUTTON6:
+		case BUTTON7:
+		    break; //Unused buttons
+		case BUTTON8:
+			stopSong();
+			break;
+		default:
+			pressed = 0;
+			break;
 	}
 }
 
