@@ -19,7 +19,7 @@ int main(void)
     clearInterrupts();
 	*SCR = 0b0101;	//Enable deep sleep
 
-	chooseSong(&ONEUP, 0x71f);
+	//chooseSong(&ONEUP, 0x71f);
 
 	__asm("wfi");		//Go into deep sleep
 	return 0;
