@@ -93,7 +93,6 @@ void onButtonPushed()
 			stopSong();
 			break;
 		default:
-			pressed = 0;
 			break;
 	}
 }
