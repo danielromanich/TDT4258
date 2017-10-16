@@ -18,6 +18,10 @@ void clearInterrupts();
 int buttonCount = 8;
 
 void onButtonPushed();
+
+void chooseSong(Song *, uint16_t);
+void stopSong();
+
 int getState(int input);
 
 /*
