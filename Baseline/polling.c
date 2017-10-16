@@ -26,7 +26,7 @@ void startPolling() {
 				 * BUTTONS 1-8 has been defined. To enable another button make a new case. 
 				 */
 			case BUTTON1:
-				chooseSong(&GOT, 0x3FFF);
+				chooseSong(&GOT, 0x1FFF);
 				break;
 			case BUTTON2:
 				chooseSong(&SHOOTING, 0x3FFF);
