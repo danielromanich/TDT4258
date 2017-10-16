@@ -1,6 +1,4 @@
-
-
- void setupTimer(uint16_t);
+void setupTimer(uint16_t);
 
 void disableTimer();
 

@@ -47,7 +47,7 @@ extern uint16_t songProgress;
 extern uint16_t progress;
 
  
-//Music and tones by https://github.com/mathiasose
+//Tones by https://github.com/mathiasose
  
 extern Note G7;
 extern Note G6;
@@ -81,8 +81,4 @@ extern Note D4;
 extern Note D5;
 extern Note D3;
 extern Song THATSNOMOON;
-extern Song PEWPEW;
-extern Song ONEUP;
-extern Song SCOM;
-extern Song CANON;
-extern Song JUMP;
+extern Song GOT;
