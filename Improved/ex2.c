@@ -1,51 +1,27 @@
 #include <stdint.h>
 #include <stdbool.h>
-//#include "sound.h"
 #include "efm32gg.h"
-/*
- * TODO calculate the appropriate sample period for the sound wave(s) you 
- * want to generate. The core clock (which the timer clock is derived
- * from) runs at 14 MHz by default. Also remember that the timer counter
- * registers are 16 bits. 
- */
-/*
 
-/*
- * Declaration of peripheral setup functions 
- */
 void setupTimer(uint32_t);
 void setupDAC();
 void setupNVIC();
 
 void setupGPIO();
 
-/*
- * Your code will start executing here 
- */
 int main(void)
 {
-	/*
-	 * Call the peripheral setup functions 
-	 */
 	setupGPIO();
 	setupDAC();
-	//setupTimer(SAMPLE_PERIOD); Not setting up timer because we want to deep sleep until we generate sounds
 
-	/*
-	 * Enable interrupt handling 
-	 */
-	clearInterrupts();
+    //Setting up our interrupts
 	setupNVIC();
-
+	//Clearing our interrupt vect
+    clearInterrupts();
 	*SCR = 0b0101;	//Enable deep sleep
-	//chooseSong(&ONEUP, 0x71f);
+
+	chooseSong(&ONEUP, 0x71f);
 
 	__asm("wfi");		//Go into deep sleep
-	/*
-	 * TODO for higher energy efficiency, sleep while waiting for
-	 * interrupts instead of infinite loop for busy-waiting 
-	 */
-
 	return 0;
 }
 
