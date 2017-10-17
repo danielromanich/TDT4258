@@ -77,7 +77,7 @@ void onButtonPushed()
 	    case BUTTON1:
 			chooseSong(&GOT, 0x3500);
 			break;
-		case BUTTON2:
+	    case BUTTON2:
 			chooseSong(&SHOOTING, 0x3FFF);
 			break;
 		case BUTTON3:
