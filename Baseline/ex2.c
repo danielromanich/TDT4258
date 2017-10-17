@@ -18,7 +18,6 @@ int main(void)
 	setupGPIO();
 	setupDAC();
 
-	*SCR = 0b0101;	//Enable deep sleep
 	initSong();
 	//Starting the method that is polling our buttons
     startPolling();
