@@ -10,15 +10,15 @@ void setupGPIO();
 
 int main(void)
 {
-	setupGPIO();
+    setupGPIO();
 	setupDAC();
-    //Setting up our interrupts
-	setupNVIC();
+	//Setting up our interrupts
+    setupNVIC();
 	//Clearing our interrupt vect
     clearInterrupts();
-	*SCR = 0b0101;	//Enable deep sleep
-	initSong();
-	//chooseSong(&GOT, 0x71f);
+    *SCR = 0b0101;	//Enable deep sleep
+    initSong();
+    //chooseSong(&GOT, 0x71f);
 
 	__asm("wfi");		//Go into deep sleep
 	return 0;
