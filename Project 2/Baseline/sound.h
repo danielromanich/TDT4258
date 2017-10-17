@@ -3,47 +3,33 @@
 /* The period between sound samples, in clock cycles */ 
 #define   SAMPLE_PERIOD   317
     
-typedef struct Note {
-	
-uint16_t noteCount;
-	
-uint8_t length[];
-
+typedef struct Note
+{
+    uint16_t noteCount;
+    uint8_t length[];
 } Note;
 
  
-typedef struct Song {
-	
-uint8_t size;
-	
-Note * notes[];
-
+typedef struct Song
+{
+    uint8_t size;
+    Note * notes[];
 } Song;
 
  
  
 void chooseSong(Song *, uint16_t);
-
 void stopSong();
-
 void setNote(Note *, int);
-
 void setSleep(int);
 
  
 //Externals
 extern int ENABLE_SLEEP;
-
- 
 extern Song* currentSong;
-
 extern uint16_t currentNoteLen;
-
- 
 extern uint32_t i;
-
 extern uint16_t songProgress;
-
 extern uint16_t progress;
 
  
@@ -78,12 +64,9 @@ extern Note B3;
 extern Note D4;
 extern Note D5;
 extern Note D3;
-extern Song A;
-extern Song B;
-extern Song C;
 extern Song GOT;
 extern Song SHOOTING;
-extern Song Out;
-extern Song ping;
-extern Song pong;
-extern Song vegg;
+extern Song OUT;
+extern Song PING;
+extern Song PONG;
+extern Song WALL;

@@ -6,7 +6,6 @@ void setupTimer(uint32_t);
 void setupDAC();
 void setupNVIC();
 void initSong();
-
 void setupGPIO();
 void startPolling();
 

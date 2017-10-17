@@ -12,7 +12,6 @@ int main(void)
 {
 	setupGPIO();
 	setupDAC();
-
     //Setting up our interrupts
 	setupNVIC();
 	//Clearing our interrupt vect

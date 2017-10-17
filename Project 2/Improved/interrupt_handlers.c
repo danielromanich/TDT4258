@@ -13,16 +13,13 @@
 #define BUTTON7 6
 #define BUTTON8 7
 
-void clearInterrupts();
-
 int buttonCount = 8;
-
-void onButtonPushed();
 
 void chooseSong(Song *, uint16_t);
 void stopSong();
-
+void clearInterrupts();
 int getState(int input);
+void onButtonPushed();
 
 /*
  * TIMER1 interrupt handler 
@@ -84,18 +81,18 @@ void onButtonPushed()
 			chooseSong(&SHOOTING, 0x3FFF);
 			break;
 		case BUTTON3:
-			chooseSong(&Out, 0x3500);
+			chooseSong(&OUT, 0x3500);
 			break;
 		case BUTTON4:
-			chooseSong(&ping, 0x3500);
+			chooseSong(&PING, 0x3500);
 			break;
 		case BUTTON5:
-			chooseSong(&pong, 0x3500);
+			chooseSong(&PONG, 0x3500);
 			break;
 		case BUTTON6:
-			chooseSong(&vegg, 0x3500);
+			chooseSong(&WALL, 0x3500);
 		case BUTTON7:
-		    break; //Unused buttons
+		    break; //Unused button
 		case BUTTON8:
 			stopSong();
 			break;
