@@ -1,4 +1,0 @@
-all:
-    +$(MAKE) -C core
-    +$(MAKE) -C Baseline
-    +$(MAKE) -C part3
