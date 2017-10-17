@@ -17,7 +17,8 @@ int buttonCount = 8;
 int getState(int input);
 void playSongBW();
 
-void startPolling() {
+void startPolling()
+{
 	while(1) {
 		bool pressed = 1;
 		uint32_t value = (*GPIO_PC_DIN ^ 0xFFFFFFFF) & 0xFF;

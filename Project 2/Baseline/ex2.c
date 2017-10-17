@@ -20,6 +20,5 @@ int main(void)
 	initSong();
 	//Starting the method that is polling our buttons
     startPolling();
-
 	return 0;
 }

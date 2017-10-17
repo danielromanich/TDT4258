@@ -19,30 +19,17 @@ typedef struct Song
  
  
 void chooseSong(Song *, uint16_t);
-
 void stopSong();
-
 void setNote(Note *, int);
-
 void setSleep(int);
 
- 
 //Externals
 extern int ENABLE_SLEEP;
-
- 
 extern Song* currentSong;
-
 extern uint16_t currentNoteLen;
-
- 
 extern uint32_t i;
-
 extern uint16_t songProgress;
-
 extern uint16_t progress;
-
- 
  
 extern Note G7;
 extern Note G6;

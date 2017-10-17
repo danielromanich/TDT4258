@@ -18,14 +18,13 @@ uint16_t progress = 0;
 
 void initSong()
 {
-	chooseSong(&GOT,0x3500);
- 
+    chooseSong(&GOT,0x3500);
 }
 
 void setNote(Note * note, int offset)
 {
     *DAC0_CH0DATA = note->length[offset];	//Set left volume
-	*DAC0_CH1DATA = note->length[offset];	//Set right volume
+    *DAC0_CH1DATA = note->length[offset];	//Set right volume
 } 
  
  
