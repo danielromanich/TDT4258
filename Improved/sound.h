@@ -47,7 +47,6 @@ extern uint16_t songProgress;
 extern uint16_t progress;
 
  
-//Music and tones by https://github.com/mathiasose
  
 extern Note G7;
 extern Note G6;

@@ -47,8 +47,6 @@ extern uint16_t songProgress;
 extern uint16_t progress;
 
  
-//Tones by https://github.com/mathiasose
- 
 extern Note G7;
 extern Note G6;
 extern Note G5;
@@ -80,5 +78,12 @@ extern Note B3;
 extern Note D4;
 extern Note D5;
 extern Note D3;
-extern Song SHOOTING;
+extern Song A;
+extern Song B;
+extern Song C;
 extern Song GOT;
+extern Song SHOOTING;
+extern Song Out;
+extern Song ping;
+extern Song pong;
+extern Song vegg;

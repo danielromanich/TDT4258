@@ -32,9 +32,17 @@ void startPolling() {
 				chooseSong(&SHOOTING, 0x3FFF);
 				break;
 			case BUTTON3:
+				chooseSong(&Out, 0x3FFF);
+				break;
 			case BUTTON4:
+				chooseSong(&ping, 0x3FFF);
+				break;
 			case BUTTON5:
+				chooseSong(&pong, 0x3FFF);
+				break;
 			case BUTTON6:
+				chooseSong(&vegg, 0x3FFF);
+				break;
 			case BUTTON7:
 			    break; //Unused buttons
 			case BUTTON8:
