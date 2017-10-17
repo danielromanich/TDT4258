@@ -18,6 +18,7 @@ uint16_t progress = 0;
 
 void initSong(){
 	chooseSong(&GOT,0x3500);
+	playSongBW();
  
  }
  
