@@ -85,3 +85,7 @@ extern Song B;
 extern Song C;
 extern Song GOT;
 extern Song SHOOTING;
+extern Song Out;
+extern Song ping;
+extern Song pong;
+extern Song vegg;

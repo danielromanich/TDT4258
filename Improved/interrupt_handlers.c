@@ -32,14 +32,14 @@ void __attribute__ ((interrupt)) TIMER1_IRQHandler()
 	clearInterrupts();
 
 	//Do checks
-	if (progress > currentNoteLen) {
+	if (progress >= currentNoteLen) {
 		songProgress++;
 		progress = 0;
 	} else {
 		progress++;
 	};
 
-	if (songProgress > currentSong->size) {
+	if (songProgress >= currentSong->size) {
 		stopSong();
 		return;
 	}
@@ -84,15 +84,16 @@ void onButtonPushed()
 			chooseSong(&SHOOTING, 0x3FFF);
 			break;
 		case BUTTON3:
-			chooseSong(&A, 0x3500);
+			chooseSong(&Out, 0x3500);
 			break;
 		case BUTTON4:
-			chooseSong(&B, 0x3500);
+			chooseSong(&ping, 0x3500);
 			break;
 		case BUTTON5:
-			chooseSong(&C, 0x3500);
+			chooseSong(&pong, 0x3500);
 			break;
 		case BUTTON6:
+			chooseSong(&vegg, 0x3500);
 		case BUTTON7:
 		    break; //Unused buttons
 		case BUTTON8:
