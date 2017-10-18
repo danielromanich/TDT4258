@@ -75,10 +75,10 @@ void onButtonPushed()
 			* BUTTONS 1-8 has been defined. To enable another button make a new case.
 			*/
 	    case BUTTON1:
-		    chooseSong(&GOT, 0x3500);
+		    chooseSong(&GOT, 0x3400);
 		    break;
 	    case BUTTON2:
-		    chooseSong(&SHOOTING, 0x3FFF);
+		    chooseSong(&SHOOTING, 0x3300);
 		    break;
 	    case BUTTON3:
 		    chooseSong(&OUT, 0x3500);
@@ -92,10 +92,8 @@ void onButtonPushed()
 	    case BUTTON6:
 		    chooseSong(&WALL, 0x3500);
 	    case BUTTON7:
-	        break; //Unused button
 	    case BUTTON8:
-	        stopSong();
-	        break;
+	        break; //Unused buttons
         default:
             break;
 	}

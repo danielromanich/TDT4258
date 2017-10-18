@@ -13,13 +13,14 @@ uint32_t i = 0;
 uint16_t songProgress = 0;
 uint16_t progress = 0;
 
-void initSong(){
-	chooseSong(&GOT,0x3500);
+void initSong()
+{
+	chooseSong(&GOT, 0x3400);
 	playSongBW();
- 
- }
- 
-void setVolume(int value) {
+}
+
+void setVolume(int value)
+{
 	*DAC0_CH0DATA = value;	//Set left volume
 	*DAC0_CH1DATA = value;	//Set right volume
 }
@@ -40,7 +41,8 @@ void stopSong()
 	disableDAC();
 } 
  
-void playSongBW(){
+void playSongBW()
+{
 	while(1) {
 		while(1) {
 			if((*TIMER1_CNT % SAMPLE_PERIOD) == 0){

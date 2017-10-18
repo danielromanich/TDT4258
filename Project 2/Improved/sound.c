@@ -18,7 +18,7 @@ uint16_t progress = 0;
 
 void initSong()
 {
-    chooseSong(&GOT,0x3500);
+    chooseSong(&GOT, 0x3400);
 }
 
 void setNote(Note * note, int offset)
