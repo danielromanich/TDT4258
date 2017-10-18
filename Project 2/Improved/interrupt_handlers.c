@@ -69,7 +69,7 @@ void __attribute__ ((interrupt)) GPIO_ODD_IRQHandler()
 
 void onButtonPushed()
 {
-    uint32_t value = (*GPIO_PC_DIN ^ 0xFFFFFFFF) & 0xFF;
+    uint32_t value = ~(*GPIO_PC_DIN) & 0xFF;
     switch (getState(value)) {
 			/*
 			* BUTTONS 1-8 has been defined. To enable another button make a new case.

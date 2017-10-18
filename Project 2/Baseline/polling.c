@@ -21,7 +21,7 @@ void startPolling()
 {
 	while(1) {
 		bool pressed = 1;
-		uint32_t value = (*GPIO_PC_DIN ^ 0xFFFFFFFF) & 0xFF;
+		uint32_t value = ~(*GPIO_PC_DIN) & 0xFF;
 		switch (getState(value)) {
 				/*
 				 * BUTTONS 1-8 has been defined. To enable another button make a new case. 
