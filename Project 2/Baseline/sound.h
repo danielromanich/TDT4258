@@ -22,7 +22,7 @@ void chooseSong(Song *, uint16_t);
 void stopSong();
 void setNote(Note *, int);
 void setSleep(int);
-
+void playSongBW();
  
 //Externals
 extern int ENABLE_SLEEP;
