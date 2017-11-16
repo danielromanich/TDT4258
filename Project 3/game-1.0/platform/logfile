@@ -1,0 +1,127 @@
+# vim: set fdm=marker fdl=1:
+{{{ 2017-11-01T17:32:35+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+}}} 2017-11-01T17:32:35+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 1)
+
+
+
+{{{ 2017-11-01T17:32:35+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+}}} 2017-11-01T17:32:35+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 1)
+
+
+
+{{{ 2017-11-01T17:32:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+}}} 2017-11-01T17:32:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 1)
+
+
+
+{{{ 2017-11-01T17:32:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+
+}}} 2017-11-01T17:32:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 1)
+
+
+
+{{{ 2017-11-01T17:32:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-01T17:32:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 1)
+
+
+
+{{{ 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+}}} 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 1)
+
+
+
+{{{ 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+}}} 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 1)
+
+
+
+{{{ 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+}}} 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 1)
+
+
+
+{{{ 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+
+}}} 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 1)
+
+
+
+{{{ 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-01T17:32:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 1)
+
+
+
+{{{ 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+}}} 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 1)
+
+
+
+{{{ 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+}}} 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 1)
+
+
+
+{{{ 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+}}} 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 1)
+
+
+
+{{{ 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+
+}}} 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 1)
+
+
+
+{{{ 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-09T10:47:31+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 1)
+
+
+
+{{{ 2017-11-16T13:08:20+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+}}} 2017-11-16T13:08:20+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 1)
+
+
+
+{{{ 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+}}} 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 1)
+
+
+
+{{{ 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+}}} 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 1)
+
+
+
+{{{ 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+}}} 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 1)
+
+
+
+{{{ 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+
+}}} 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 1)
+
+
+
+{{{ 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-16T13:08:57+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 1)
+
+
+
