@@ -125,3 +125,33 @@
 
 
 
+{{{ 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+}}} 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 1)
+
+
+
+{{{ 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+}}} 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 1)
+
+
+
+{{{ 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+}}} 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 1)
+
+
+
+{{{ 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+
+}}} 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 1)
+
+
+
+{{{ 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-21T15:10:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 1)
+
+
+

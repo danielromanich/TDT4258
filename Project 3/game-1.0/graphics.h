@@ -14,8 +14,11 @@
 
 uint16_t* gamePixels;
 
+void setRect(int, int, int, int);
 void drawPixel(int, int, uint16_t);
 void drawNumber(int, uint16_t, uint16_t, int, int);
 void repaint();
 int getPixel(int, int);
+int getX(int);
+int getY(int);
 void paintStruct(GameObject, uint16_t);

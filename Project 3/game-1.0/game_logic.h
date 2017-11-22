@@ -28,7 +28,7 @@ typedef enum
 int checkFruit(GameObject);
 void addSnakePart();
 int checkSnakeCollision(GameObject);
-int isValidDirection(GameObject, GameObject);
+int isValidDirection(Direction, Direction);
 void drawString(char[], uint16_t, uint16_t, int, int);
 Direction getNextDirection(Direction);
 int moveSnake(Direction, GameObject);

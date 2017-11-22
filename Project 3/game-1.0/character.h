@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 #define CHARACTER_WIDTH 7
+#define CHARACTER_HEIGHT 12
 #define CHARACTER_SIZE 84
 
 typedef struct {
@@ -16,6 +17,8 @@ typedef struct {
 void drawPixel(int, int, uint16_t);
 String toArray(int);
 int getCharIndex(char);
+void repaint();
+void setRect(int, int, int, int);
 
 Character characters[91] = {
 						 
