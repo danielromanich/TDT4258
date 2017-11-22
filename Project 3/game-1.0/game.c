@@ -2,7 +2,7 @@
 #include "game_logic.h"
 #include <sys/time.h>
 
-FILE* driver;
+FILE* device;
 bool gamePause = false;
 bool newTick = false;
 struct timeval tv1;
@@ -11,7 +11,7 @@ struct timeval tv2;
 int main(int argc, char *argv[])
 {
 	printf("Snake game started!\n");
-	initGamepadDriver(); //Setting up the gamepad driver
+	initGamepadDevice(); //Setting up the gamepad driver
 	setupGraphics(); //Initialize the graphics
 	setupGame(); //Initialize the game
 	gettimeofday(&tv1, 0);
@@ -52,10 +52,10 @@ void sigioHandler(int signo)
 	}
 }
 
-//Initializes the gamepad driver
-int initGamepadDriver()
+//Initializes the gamepad device
+int initGamepadDevice()
 {
-	driver = fopen("/dev/gamepad", "rb");
+	device = fopen("/dev/gamepad", "rb");
 	signal(SIGIO, &sigioHandler);
 	fcntl(fileno(driver), F_SETOWN, getpid());
 	int oflags = fcntl(fileno(driver), F_GETFL);
