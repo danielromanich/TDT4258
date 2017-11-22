@@ -9,7 +9,7 @@
 #include <math.h>
 
 void sigio_handler(int);
-int initGamepadDriver();
+int initGamepadDevice();
 void setupGame();
 void setupGraphics();
 int handleGame();

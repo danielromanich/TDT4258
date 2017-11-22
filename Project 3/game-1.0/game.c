@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 void sigioHandler(int signo)
 {
 	if (signo == SIGIO) {
-		int data = (int) fgetc(driver);
+		int data = (int) fgetc(device);
 		int button = getIndex(data);
 		if (button != -1)
 			setDirection(button);
@@ -57,8 +57,8 @@ int initGamepadDevice()
 {
 	device = fopen("/dev/gamepad", "rb");
 	signal(SIGIO, &sigioHandler);
-	fcntl(fileno(driver), F_SETOWN, getpid());
-	int oflags = fcntl(fileno(driver), F_GETFL);
-	fcntl(fileno(driver), F_SETFL, oflags | FASYNC);
+	fcntl(fileno(device), F_SETOWN, getpid());
+	int oflags = fcntl(fileno(device), F_GETFL);
+	fcntl(fileno(device), F_SETFL, oflags | FASYNC);
     return EXIT_SUCCESS;
 }
